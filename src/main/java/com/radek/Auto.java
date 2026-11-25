@@ -1,15 +1,19 @@
 package com.radek;
 
+import java.util.ArrayList;
+
 public class Auto {
     private String spz;
     private String intCislo;
-    private String jmenoRidice;
+    private ArrayList<Tankovani> seznamTankovani = new ArrayList<>();
 
-    public Auto(String spz, String intCislo, String jmenoRidice) {
+
+    public Auto(String spz, String intCislo) {
         this.spz = spz;
         this.intCislo = intCislo;
-        this.jmenoRidice = jmenoRidice;
+
     }
+
 
     public String getSpz() {
         return spz;
@@ -18,9 +22,9 @@ public class Auto {
     @Override
     public String toString() {
         return "Auto{" +
-                "spz = '" + spz + '\'' +
-                ", intCislo = '" + intCislo + '\'' +
-                ", jmenoRidice = '" + jmenoRidice + '\'' +
+                "spz='" + spz + '\'' +
+                ", intCislo='" + intCislo + '\'' +
+                ", seznamTankovani=" + seznamTankovani+
                 '}';
     }
 }
